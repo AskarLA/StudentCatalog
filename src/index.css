@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f9fa;
+  background-color: #0f1115;
+  color: #e8ecf2;
 }
 
 code {
@@ -16,13 +17,16 @@ code {
 .student-card {
   transition: transform 0.2s, box-shadow 0.2s;
   height: 100%;
-  border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #1e2128;
+  background-color: #161920;
+  color: #e8ecf2;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .student-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border-color: #2b3140;
 }
 
 .student-icon-wrapper {
@@ -35,9 +39,9 @@ code {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  background-color: #f8f9fa;
+  border: 2px solid #2b3140;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background-color: #0f1115;
 }
 
 .detail-icon-wrapper {
@@ -50,8 +54,51 @@ code {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background-color: #f8f9fa;
+  border: 3px solid #2b3140;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  background-color: #0f1115;
+}
+
+.catalog-dark {
+  background: linear-gradient(180deg, #0f1115 0%, #0d0f14 100%);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.filter-panel {
+  background-color: #161920;
+  border: 1px solid #1f2430;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline-primary {
+  color: #dfe6f3;
+  border-color: #2f3b52;
+}
+
+.btn-outline-primary:hover {
+  color: #0f1115;
+  background-color: #dfe6f3;
+  border-color: #dfe6f3;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.btn-xs {
+  padding: 6px 10px;
+  font-size: 0.82rem;
+}
+
+.pill {
+  border-radius: 999px;
 }
 

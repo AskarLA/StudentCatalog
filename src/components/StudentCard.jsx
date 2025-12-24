@@ -18,8 +18,11 @@ const StudentCard = ({ student }) => {
               alt={student.fullName}
               className="student-avatar rounded-circle"
               onError={(e) => {
-                // Fallback to anime avatar if image doesn't exist
-                e.target.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${student.fullName}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+                // Fallback to generated avatar if local image is missing
+                e.target.onerror = null; // prevent loops
+                e.target.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(
+                  student.fullName
+                )}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
               }}
             />
           </div>
