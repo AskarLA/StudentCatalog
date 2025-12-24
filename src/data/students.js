@@ -1,166 +1,162 @@
-// Sample Student Data
 export const students = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    fullName: "John Smith",
-    group: "CS-101",
-    year: 2023,
-    age: 20,
-    gpa: 3.8
+    fullName: "Aizada Toktosunova",
+    group: "SE-101",
+    year: 1,
+    gpa: 3.7,
+    image: "images/students/student01.jpg"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    fullName: "Emily Johnson",
-    group: "CS-101",
-    year: 2023,
-    age: 19,
-    gpa: 3.9
+    fullName: "Nursultan Abdrakhmanov",
+    group: "SE-101",
+    year: 1,
+    gpa: 3.4,
+    image: "images/students/student02.jpg"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    fullName: "Michael Brown",
-    group: "CS-102",
-    year: 2022,
-    age: 21,
-    gpa: 3.7
+    fullName: "Aigerim Satarova",
+    group: "SE-102",
+    year: 1,
+    gpa: 3.9,
+    image: "images/students/student03.jpg"
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    fullName: "Sarah Davis",
-    group: "CS-102",
-    year: 2022,
-    age: 22,
-    gpa: 3.95
+    fullName: "Timur Kadyrov",
+    group: "SE-102",
+    year: 1,
+    gpa: 3.2,
+    image: "images/students/student04.jpg"
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    fullName: "David Wilson",
-    group: "CS-103",
-    year: 2024,
-    age: 18,
-    gpa: 3.6
+    fullName: "Bakytbek Omuraliev",
+    group: "CS-201",
+    year: 2,
+    gpa: 3.5,
+    image: "images/students/student05.jpg"
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    fullName: "Jessica Martinez",
-    group: "CS-103",
-    year: 2024,
-    age: 19,
-    gpa: 3.85
+    fullName: "Aizada Isaeva",
+    group: "CS-201",
+    year: 2,
+    gpa: 3.8,
+    image: "images/students/student06.jpg"
   },
   {
     id: 7,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    fullName: "Christopher Anderson",
-    group: "CS-101",
-    year: 2023,
-    age: 20,
-    gpa: 3.5
+    fullName: "Kanatbek Toktogulov",
+    group: "CS-202",
+    year: 2,
+    gpa: 3.1,
+    image: "images/students/student07.jpg"
   },
   {
     id: 8,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
-    fullName: "Amanda Taylor",
-    group: "CS-102",
-    year: 2022,
-    age: 21,
-    gpa: 3.9
+    fullName: "Dinara Alieva",
+    group: "CS-202",
+    year: 2,
+    gpa: 3.6,
+    image: "images/students/student08.jpg"
   },
   {
     id: 9,
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    fullName: "James Thomas",
-    group: "CS-103",
-    year: 2024,
-    age: 18,
-    gpa: 3.75
+    fullName: "Erkin Sadykov",
+    group: "IT-301",
+    year: 3,
+    gpa: 3.3,
+    image: "images/students/student09.jpg"
   },
   {
     id: 10,
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop",
-    fullName: "Lisa Garcia",
-    group: "CS-101",
-    year: 2023,
-    age: 20,
-    gpa: 3.88
+    fullName: "Meerim Kasenova",
+    group: "IT-301",
+    year: 3,
+    gpa: 3.9,
+    image: "images/students/student10.jpg"
   },
   {
     id: 11,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    fullName: "Robert Rodriguez",
-    group: "CS-102",
-    year: 2022,
-    age: 22,
-    gpa: 3.65
+    fullName: "Azamat Mambetaliev",
+    group: "IT-302",
+    year: 3,
+    gpa: 2.9,
+    image: "images/students/student11.jpg"
   },
   {
     id: 12,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    fullName: "Jennifer Lee",
-    group: "CS-103",
-    year: 2024,
-    age: 19,
-    gpa: 3.92
+    fullName: "Cholpon Sydykova",
+    group: "IT-302",
+    year: 3,
+    gpa: 3.4,
+    image: "images/students/student12.jpg"
   },
   {
     id: 13,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    fullName: "William White",
-    group: "CS-101",
-    year: 2023,
-    age: 20,
-    gpa: 3.7
+    fullName: "Almaz Zholdoshev",
+    group: "SE-401",
+    year: 4,
+    gpa: 3.6,
+    image: "images/students/student13.jpg"
   },
   {
     id: 14,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    fullName: "Michelle Harris",
-    group: "CS-102",
-    year: 2022,
-    age: 21,
-    gpa: 3.83
+    fullName: "Nargiza Esenalieva",
+    group: "SE-401",
+    year: 4,
+    gpa: 3.8,
+    image: "images/students/student14.jpg"
   },
   {
     id: 15,
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-    fullName: "Daniel Clark",
-    group: "CS-103",
-    year: 2024,
-    age: 18,
-    gpa: 3.6
+    fullName: "Rustam Karabaev",
+    group: "SE-402",
+    year: 4,
+    gpa: 3.2,
+    image: "images/students/student15.jpg"
   },
   {
     id: 16,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    fullName: "Ashley Lewis",
-    group: "CS-101",
-    year: 2023,
-    age: 20,
-    gpa: 3.9
+    fullName: "Aizada Sydykbekova",
+    group: "SE-402",
+    year: 4,
+    gpa: 3.1,
+    image: "images/students/student16.jpg"
   },
   {
     id: 17,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    fullName: "Matthew Walker",
-    group: "CS-102",
-    year: 2022,
-    age: 22,
-    gpa: 3.55
+    fullName: "Ulanbek Asanov",
+    group: "CS-203",
+    year: 2,
+    gpa: 2.8,
+    image: "images/students/student17.jpg"
   },
   {
     id: 18,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
-    fullName: "Nicole Hall",
-    group: "CS-103",
-    year: 2024,
-    age: 19,
-    gpa: 3.87
+    fullName: "Guljan Ergeshova",
+    group: "CS-203",
+    year: 2,
+    gpa: 3.7,
+    image: "images/students/student18.jpg"
+  },
+  {
+    id: 19,
+    fullName: "Tilek Muktarov",
+    group: "IT-101",
+    year: 1,
+    gpa: 3.0,
+    image: "images/students/student19.jpg"
+  },
+  {
+    id: 20,
+    fullName: "Asemgul Kudayberdieva",
+    group: "IT-101",
+    year: 1,
+    gpa: 3.5,
+    image: "images/students/student20.jpg"
   }
 ];
-

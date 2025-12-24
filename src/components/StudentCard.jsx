@@ -3,9 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const StudentCard = ({ student }) => {
   const navigate = useNavigate();
-  
-  // Generate anime-style avatar URL using DiceBear API
-  const avatarUrl = `https://api.dicebear.com/7.x/avataaars/svg?seed=${student.fullName}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
 
   const handleViewDetails = () => {
     navigate(`/students/${student.id}`);
@@ -17,17 +14,18 @@ const StudentCard = ({ student }) => {
         <div className="card-body text-center">
           <div className="student-icon-wrapper mb-3">
             <img
-              src={avatarUrl}
+              src={`/${student.image}`}
               alt={student.fullName}
               className="student-avatar rounded-circle"
+              onError={(e) => {
+                // Fallback to anime avatar if image doesn't exist
+                e.target.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${student.fullName}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+              }}
             />
           </div>
           <h5 className="card-title mb-2">{student.fullName}</h5>
           <p className="card-text mb-2">
             Group: {student.group}
-          </p>
-          <p className="card-text mb-2">
-            Age: {student.age} years old
           </p>
           <span className="badge bg-success mb-3">
             GPA {student.gpa}

@@ -6,9 +6,6 @@ const StudentDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const student = students.find(s => s.id === parseInt(id));
-  
-  // Generate anime-style avatar URL using DiceBear API
-  const avatarUrl = student ? `https://api.dicebear.com/7.x/avataaars/svg?seed=${student.fullName}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf` : '';
 
   if (!student) {
     return (
@@ -38,9 +35,13 @@ const StudentDetail = () => {
               <div className="text-center mb-4">
                 <div className="detail-icon-wrapper">
                   <img
-                    src={avatarUrl}
+                    src={`/${student.image}`}
                     alt={student.fullName}
                     className="detail-avatar rounded-circle"
+                    onError={(e) => {
+                      // Fallback to anime avatar if image doesn't exist
+                      e.target.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${student.fullName}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+                    }}
                   />
                 </div>
               </div>
@@ -55,9 +56,6 @@ const StudentDetail = () => {
                   </div>
                   <div className="col-md-6 mb-3">
                     <strong>Year of Study:</strong> {student.year}
-                  </div>
-                  <div className="col-md-6 mb-3">
-                    <strong>Age:</strong> {student.age} years old
                   </div>
                   <div className="col-md-6 mb-3">
                     <strong>GPA:</strong> {student.gpa}
